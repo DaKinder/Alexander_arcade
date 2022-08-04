@@ -1,26 +1,26 @@
 using UnityEngine;
 
-public class SpawnManager : MonoBehaviour
+public class SpawnManager : Enemy
 {
 
     //Ќе смог сделать через массив или список, забыл как(((
 
-    [SerializeField]public Enemy[] enemyPrefabs;
+    [SerializeField]public GameObject[] enemyPrefabs;
     private float spawnAnyEnemyPositionY = 1;
-    private float spawnEnemy1PositionX = -7.46f;
-    private float spawnEnemy1PositionZ = 1.49f;
+    private float spawnEnemy1PositionX = -7.5f;
+    private float spawnEnemy1PositionZ = 3.2f;
     private float spawnEnemy2PositionX = -13.6f;
-    private float spawnEnemy2PositionZ = 4.1f;
-    private float spawnEnemy3PositionX = -14.4f;
-    private float spawnEnemy3PositionZ = -7.68f;
-    private float spawnEnemy4PositionX = -3.49f;
-    private float spawnEnemy4PositionZ = -7.11f;
-    private float spawnEnemy5PositionX = 8.84f;
-    private float spawnEnemy5PositionZ = -10.93f;
-    private float spawnEnemy6PositionX = 7.76f;
-    private float spawnEnemy6PositionZ = -5.85f;
-    private float spawnEnemy7PositionX = 14.74f;
-    private float spawnEnemy7PositionZ = 3.83f;
+    private float spawnEnemy2PositionZ = 6f;
+    private float spawnEnemy3PositionX = -7.5f;
+    private float spawnEnemy3PositionZ = -5.6f;
+    private float spawnEnemy4PositionX = -4.5f;
+    private float spawnEnemy4PositionZ = -8.8f;
+    private float spawnEnemy5PositionX = 8.9f;
+    private float spawnEnemy5PositionZ = -8.8f;
+    private float spawnEnemy6PositionX = 9.3f;
+    private float spawnEnemy6PositionZ = -3.7f;
+    private float spawnEnemy7PositionX = 16.4f;
+    private float spawnEnemy7PositionZ = .5f;
     private float startDelay = 0.1f;
     private float spawnInterval = 1000.0f;
     void Start()

@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float runSpeed = 5f;
     [SerializeField] private float angularSpeed = 100f;
     [SerializeField] private float jumpForce = 130f;
-    
+    public GameObject hand;
     private Rigidbody playerRb;
 
     private const string SideStep = "SideStep";

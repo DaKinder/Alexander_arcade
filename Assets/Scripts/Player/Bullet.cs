@@ -5,11 +5,6 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float bulletSpeed = 10f;
     [SerializeField] private float damage = 10f;
 
-    private void Start()
-    {
-        Destroy(gameObject, 5f);
-    }
-
     private void Update()
     {
         transform.position += bulletSpeed * Time.deltaTime * transform.forward;

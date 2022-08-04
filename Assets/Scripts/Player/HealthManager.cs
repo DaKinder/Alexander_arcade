@@ -14,7 +14,7 @@ public class HealthManager : MonoBehaviour
         currentHealth -= damage;
         if(currentHealth < 0)
         {
-            Time.timeScale = 0;
+           Destroy(gameObject);
         }
     }
 }
