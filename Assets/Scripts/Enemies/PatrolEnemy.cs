@@ -7,7 +7,7 @@ public class PatrolEnemy : Enemy
 {
     private NavMeshAgent agent;
     [SerializeField] private Transform[] waypoints;
-
+    //private bool delayTime;
     private int index;
 
     private void Start()
