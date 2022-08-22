@@ -9,7 +9,7 @@ public class HealthManager : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
-    public void Hit(float damage)
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         if(currentHealth < 0)

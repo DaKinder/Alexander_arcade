@@ -6,16 +6,16 @@ using UnityEngine.AI;
 public class FollowingEnemy : Enemy
 {
     private NavMeshAgent agent;
-    private Transform player;
+    public Transform enemy;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        player = FindObjectOfType<PlayerMovement>().transform;
+        enemy = FindObjectOfType<PlayerMovement>().transform;
     }
 
     private void Update()
     {
-        agent.SetDestination(player.position);
+        agent.SetDestination(enemy.position);
     }
 }
